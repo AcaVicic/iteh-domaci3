@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$mainBlack:#222;
+$mainBlue:rgb(16, 14, 133);
+$mainWhite:rgb(255, 255, 255);
+$mainGrey:rgb(177, 177, 177);
+
+body{
+    background: $mainWhite;
+}
