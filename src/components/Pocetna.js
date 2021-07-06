@@ -1,10 +1,9 @@
 import React from 'react';
+import "./Pocetna.scss"
 
 export default function Pocetna() {
     return (
-        <div>
-            Pocetna stranica
-        </div>
+        <h1>Dobrodosli</h1> 
     )
 }
 
