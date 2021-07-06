@@ -1,6 +1,8 @@
 import Grad from "./Grad";
 import "./Gradovi.scss";
 import {podaci} from "./podaci"
+import logo from "./images/Grb Srbije.png"
+
 
 import React, { Component } from 'react'
 
@@ -19,11 +21,26 @@ export default class Gradovi extends Component {
         const {gradovi} = this.state;
 
         return (
-            <section className="lista-gradova">
-                {gradovi.map(grad =>{
-                    return <Grad key = {grad.id} grad = {grad} removeTour = {this.removeTour}/>
-                })}
-            </section>
+            <>
+            <nav className="navbar">
+            <img src={logo} alt="" />
+            <ul className="nav-links">
+                <li>
+                    <a href="/" className="nav-link">Pocetna stranica</a>
+                </li>
+                <li>
+                    <a href="/gradovi" className="nav-link">Gradovi</a>
+                </li>
+            </ul>
+        </nav>
+            <div className="gradovi-container">
+                <section className="lista-gradova">
+                    {gradovi.map(grad =>{
+                        return <Grad key = {grad.id} grad = {grad} removeTour = {this.removeTour}/>
+                    })}
+                </section>
+            </div>
+            </>
         )
     }
 }

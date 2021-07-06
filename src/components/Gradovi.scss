@@ -7,6 +7,10 @@
     padding: 2rem 0;
 }
 
+.gradovi-container{
+    background-color: $mainWhite;
+}
+
 @media screen and (min-width: 768px){
     .lista-gradova{
         display: grid;

@@ -16,7 +16,7 @@ export default class Grad extends Component {
         const{removeTour} = this.props;
 
         return (
-            <article className="grad">
+        <article className="grad">
             <div className="img-container">
                 <img className="img-grad" src={img} alt="" />
                 <span className="close-btn" onClick={()=>{removeTour(id)}}>

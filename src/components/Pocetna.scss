@@ -1,10 +1,36 @@
 @import "../index.scss";
 
-h1{
+h1, h3{
+    
+    margin-top: 0px;
     text-align: center;
+    color: $mainGrey;
 }
 
 .container{
     text-align: center;
     justify-content: center;
+    
 }
+
+.zvaka{
+    background-image: url(./images/uvac.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:720px;
+    text-align: center;
+    justify-content: center;
+}
+
+.kvadratic{
+    width: 640px; /* Can be in percentage also. */
+    height: auto;
+    margin: 10% 25%;
+    padding: 10px;
+    position: absolute;
+    border-radius: 15px;
+    background-color: $mainBlue;
+    box-shadow: 2px 2px rgb(0 0 0 / 30%);
+}
+
+
